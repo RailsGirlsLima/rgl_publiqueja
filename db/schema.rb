@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20151018161353) do
 
   create_table "comments", :force => true do |t|
-    t.integer  "id_idea"
+    t.integer  "idea_id"
     t.text     "comment"
     t.string   "name"
     t.string   "email"

@@ -1,3 +1,4 @@
 class Comment < ActiveRecord::Base
-  attr_accessible :comment, :email, :id_idea, :name, :phone
+  belongs_to :idea
+  attr_accessible :comment, :email, :idea_id, :name, :phone
 end
