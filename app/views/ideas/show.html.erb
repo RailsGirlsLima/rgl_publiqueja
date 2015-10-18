@@ -15,6 +15,18 @@
 	<%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 </p>
 
+<p>
+  <b>X:</b>
+  <%= @idea.x %>
+</p>
+<p>
+  <b>Y:</b>
+  <%= @idea.y %>
+</p>
+<p>
+  <b>Categoria:</b>
+  <%= @idea.category %>
+</p>
 
 <%= link_to 'Edit', edit_idea_path(@idea) %> |
 <%= link_to 'Back', ideas_path %>
